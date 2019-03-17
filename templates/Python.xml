@@ -1,4 +1,4 @@
-<templateSet group="Python">
+<templateSet group="Odoo Python">
   <template name="#!" value="#!/usr/bin/env python" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
@@ -90,63 +90,63 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="translate import" value="from odoo.tools.translate import _" description="" toReformat="true" toShortenFQNames="true">
+  <template name="import translate" value="from odoo.tools.translate import _" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func search" value="@api.model&#10;def search(self, args, offset=0, limit=None, order=None, count=False):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).read(args, offset, limit, order, count)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func read" value="@api.multi&#10;def read(self, fields=None, load='_classic_read'):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).read(fields, load)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func create" value="@api.model&#10;def create(self, vals):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).create(vals)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func write" value="@api.multi&#10;def write(self):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).write()" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func unlink" value="@api.multi&#10;def unlink(self):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).unlink()" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func copy" value="@api.multi&#10;@api.return('self',lambda value:value.id)&#10;def copy(self, default=None):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).copy(default)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func default_get" value="@api.model&#10;def default_get(self, default_fields):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).default_get(default_fields)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
   <template name="func fields_get" value="@api.model&#10;def fields_get(self, allfields=None, attributes=None):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).fields_get(allfields, attributes)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="var9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
@@ -159,7 +159,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="read" value="self.read($var1$, ['$var2$'])$var3$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call read" value="self.read($var1$, ['$var2$'])$var3$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -167,13 +167,13 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="browse" value="self.browse($var1$)$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call browse" value="self.browse($var1$)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="search" value="self.search([('$var1$', '$var2$', '$var3$')])$var4$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call search" value="self.search([('$var1$', '$var2$', '$var3$')])$var4$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var2" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -182,25 +182,25 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="create" value="id = self.create($var1$)$var2$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call create" value="id = self.create($var1$)$var2$&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="write" value="record.write($var2$)$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call write" value="record.write($var2$)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="unlink" value="record.unlink()$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call unlink" value="record.unlink()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="copy" value="self.copy($var1$, $var2$)$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="call copy" value="self.copy($var1$, $var2$)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -267,7 +267,6 @@
   <template name="super" value="super($class$, self).$method$($END$)" description="Generates a 'super' call" toReformat="true" toShortenFQNames="true">
     <variable name="class" expression="pyClassName()" defaultValue="" alwaysStopAt="false" />
     <variable name="method" expression="pyFunctionName()" defaultValue="" alwaysStopAt="false" />
-    <context />
   </template>
   <template name="docstring" value="&quot;&quot;&quot;&#10;    :param id: id&#10;    :param ids: list of ids&#10;    :rtype: dictionary with a&#10;    &#10;    This function is used for&#10;&quot;&quot;&quot;" description="docstring" toReformat="true" toShortenFQNames="true">
     <context>
@@ -289,7 +288,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="env" value="self.env.get('$var1$')&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="env get" value="self.env.get('$var1$')&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
