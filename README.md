@@ -41,7 +41,10 @@ Contributors
 
    * Julien Drecq
    * Maxime Jacquet
+   * jeffery Chen Fan
 ```
 
 # Todo : 
 * Odoo new api integration (decorator, function, views, etc.)
+* pycharm variable exprssion   [live template variable](https://www.jetbrains.com/help/pycharm/template-variables.html)
+* 
