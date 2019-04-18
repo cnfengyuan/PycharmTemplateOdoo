@@ -95,56 +95,56 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func search" value="@api.model&#10;def search(self, args, offset=0, limit=None, order=None, count=False):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).read(args, offset, limit, order, count)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func search" value="@api.model&#10;def search(self, args, offset=0, limit=None, order=None, count=False):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).read(args, offset, limit, order, count)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func read" value="@api.multi&#10;def read(self, fields=None, load='_classic_read'):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).read(fields, load)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func read" value="@api.multi&#10;def read(self, fields=None, load='_classic_read'):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).read(fields, load)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func create" value="@api.model&#10;def create(self, vals):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).create(vals)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func create" value="@api.model&#10;def create(self, vals):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).create(vals)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func write" value="@api.multi&#10;def write(self):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).write()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func write" value="@api.multi&#10;def write(self):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).write()" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func unlink" value="@api.multi&#10;def unlink(self):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).unlink()" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func unlink" value="@api.multi&#10;def unlink(self):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).unlink()" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func copy" value="@api.multi&#10;@api.return('self',lambda value:value.id)&#10;def copy(self, default=None):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).copy(default)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func copy" value="@api.multi&#10;@api.return('self',lambda value:value.id)&#10;def copy(self, default=None):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).copy(default)&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func default_get" value="@api.model&#10;def default_get(self, default_fields):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).default_get(default_fields)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func default_get" value="@api.model&#10;def default_get(self, default_fields):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).default_get(default_fields)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="func fields_get" value="@api.model&#10;def fields_get(self, allfields=None, attributes=None):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return supper($var9$, self).fields_get(allfields, attributes)" description="" toReformat="true" toShortenFQNames="true">
+  <template name="func fields_get" value="@api.model&#10;def fields_get(self, allfields=None, attributes=None):&#10;    &quot;&quot;&quot;&#10;    $var1$&#10;    &quot;&quot;&quot;&#10;&#10;    return super($var9$, self).fields_get(allfields, attributes)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="var1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="var9" expression="pyClassName()" defaultValue="" alwaysStopAt="true" />
     <context>
